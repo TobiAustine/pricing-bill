@@ -60,13 +60,6 @@
 
     
     <script>
-    //    let slider = document.getElementById("slider");
-    //    let cost = document.getElementById("cost");
-    //    cost.innerHTML = slider.value;
-    //    slider.oninput = function(){
-    //        cost.innerHTML ="$"+this.value+".00" 
-    //    }
-
         let slider = document.getElementById("slider").value;
             // slider.oninput = function(){
             //     slider.value=this.value;
@@ -74,22 +67,37 @@
         let cost = document.getElementById("cost");
         let views = document.getElementById("views");
 
-        if (slider.value == "0"){
+        if (slider == 0){
                 views.innerHTML = "10k PAGEVIEWS";
                 cost.innerHTML = "$8.00";
-        }else if (slider.value == "25"){
+        }else if (slider == 25){
             views.innerHTML = "50k PAGEVIEWS";
                 cost.innerHTML = "$12.00";
-        }else if (slider.value == "50"){
+        }else if (slider == 50){
             views.innerHTML = "100k PAGEVIEWS";
                 cost.innerHTML = "$16.00";
-        }else if (slider.value == "75"){
+        }else if (slider == 75){
             views.innerHTML = "500k PAGEVIEWS";
                 cost.innerHTML = "$24.00";
-        }else if (slider.value == "100"){
+        }else if (slider == 100){
             views.innerHTML = "1M PAGEVIEWS";
                 cost.innerHTML = "$36.00";
         }
+
+
+        // slider.addEventListener("mousemove", function(){
+        //     let x = slider.value;
+        //     let color = 'linear-gradient (90deg, hsl(224, 65%, 95%)' + x + '%, hsl(174, 86%, 45%)' + x + '%)';
+        //     slider.style.background=color;
+        // })
+
+        // slider.oninput = function(){
+        //     this.style.background('linear-gradient(90deg, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%)'  + this.value + '%, hsl(224, 65%, 95%)' + this.value + '%, hsl(224, 65%, 95%) 100% )');
+        // };
+
+        // slider.oninput= function(){
+        //     this.style.background(red)
+        // };
 
    </script>  
 </body>
